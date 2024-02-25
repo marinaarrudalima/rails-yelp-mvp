@@ -1,0 +1,7 @@
+<h1>Reviews list</h1>
+<ul>
+  <% @reviews.each do |review| %>
+  <li><%= link_to review.restaurant.name, review.restaurant %>
+  </li>
+<% end %>
+</ul>
